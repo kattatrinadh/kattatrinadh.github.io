@@ -9,19 +9,20 @@ https://templatemo.com/tm-600-prism-flux
 const portfolioData = [
     {
         id: 1,
-        title: 'AES-DPA Capstone project',
-        description: 'Implemented Advanced Encryption Standard (AES) algorithm to secure data transmission and storage.',
-        image: '', // Placeholder for image
-        tech: ['Python', 'Cryptography'],
+        title: 'AES-DPA Resistant Capstone Project',
+        description: 'Developed a secure implementation of the Advanced Encryption Standard (AES) in Python and simulated Differential Power Analysis (DPA) attacks using synthetic power traces. Implemented masking and randomization countermeasures to reduce side-channel leakage and validated security improvements through statistical trace analysis for embedded and IoT applications.',
+        image: 'images/aes-dpa-project.png', 
+        tech: ['Python', 'Cryptography', 'Differential Power Analysis',  'Security Research'],
         link: 'https://github.com/kattatrinadh/aes-dpa-resistant-capstone'
+
     },
 
     {
         id: 2,
-        title: 'QR Code Scanner',
-        description: 'Built a real-time QR code scanning application for rapid data extraction and processing.',
-        image: '',
-        tech: ['Python', 'OpenCV'],
+        title: 'Real-Time QR Code Scanner (ESP32-CAM)',
+        description: 'Developed a real-time QR code scanning system using ESP32-CAM for rapid data extraction and wireless transmission. Integrated image capture with QR decoding logic to process and display encoded information efficiently. Designed for IoT-based authentication and smart automation applications.',
+        image: 'images/qr-scanner.png',
+        tech: ['ESP32-CAM', 'Python', 'OpenCV', 'IoT', 'Embedded Systems'],
         link: 'https://github.com/kattatrinadh/Qr_code_Scanner_ESP-32'
     },
     {
@@ -34,20 +35,20 @@ const portfolioData = [
     },
     {
         id: 4,
-        title: 'Electric Vehicle Charge Prediction',
-        description: 'Designed a BMS emphasizing real-time monitoring and safety for EV battery packs.',
-        image: '',
-        tech: ['Embedded C', 'FreeRTOS'],
+        title: 'Electric Vehicle Charge Prediction & Smart BMS',
+        description: 'Designed and implemented an intelligent Battery Management System (BMS) for Electric Vehicles with real-time monitoring of State of Charge (SOC), temperature, and safety parameters. Developed predictive charge estimation logic to enhance battery lifespan and efficiency. Implemented task scheduling using FreeRTOS for reliable embedded system performance and optimized energy management.',
+        image: 'images/ev-bms.png',
+        tech: ['Embedded C', 'FreeRTOS', 'Battery Management System', 'Real-Time Systems', 'EV Technology'],
         link: 'https://github.com/kattatrinadh/Electric-Vehicle-Charge-Prediction'
     }
 ];
 
 // Skills data
 const skillsData = [
-    { name: 'AWS', icon: '☁️', level: 90, category: 'cloud' },
+    { name: 'AWS', icon: '☁️', level: 80, category: 'cloud' },
     { name: 'Azure', icon: '☁️', level: 85, category: 'cloud' },
     { name: 'Kubernetes', icon: '☸️', level: 80, category: 'cloud' },
-    { name: 'Docker', icon: '🐳', level: 85, category: 'cloud' },
+    { name: 'Docker', icon: '🐳', level: 80, category: 'cloud' },
     { name: 'Terraform', icon: '🏗️', level: 80, category: 'cloud' },
     { name: 'Ansible', icon: '⚙️', level: 75, category: 'cloud' },
     { name: 'Jenkins', icon: '🚀', level: 85, category: 'cloud' },
@@ -56,7 +57,7 @@ const skillsData = [
     { name: 'Python', icon: '🐍', level: 90, category: 'backend' },
     { name: 'C', icon: '⚙️', level: 85, category: 'backend' },
     { name: 'Embedded C', icon: '🔌', level: 85, category: 'hardware' },
-    { name: 'FreeRTOS', icon: '⏱️', level: 80, category: 'hardware' },
+    { name: 'RTOS', icon: '⏱️', level: 80, category: 'hardware' },
     { name: 'Microcontrollers', icon: '🎛️', level: 85, category: 'hardware' },
     { name: 'IoT/MQTT', icon: '📡', level: 80, category: 'hardware' }
 ];
