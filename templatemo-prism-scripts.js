@@ -12,35 +12,40 @@ const portfolioData = [
         title: 'AES Security System',
         description: 'Implemented Advanced Encryption Standard (AES) algorithm to secure data transmission and storage.',
         image: '', // Placeholder for image
-        tech: ['Python', 'Cryptography']
+        tech: ['Python', 'Cryptography'],
+        link: 'https://github.com/kattatrinadh/aes-security-system'
     },
     {
         id: 2,
         title: 'IoT Smart LED',
         description: 'Developed an intelligent lighting system controlled via MQTT for smart home integration.',
         image: '',
-        tech: ['C', 'ESP32', 'MQTT']
+        tech: ['C', 'ESP32', 'MQTT'],
+        link: 'https://github.com/kattatrinadh/iot-smart-led'
     },
     {
         id: 3,
         title: 'QR Code Scanner',
         description: 'Built a real-time QR code scanning application for rapid data extraction and processing.',
         image: '',
-        tech: ['Python', 'OpenCV']
+        tech: ['Python', 'OpenCV'],
+        link: 'https://github.com/kattatrinadh/qr-code-scanner'
     },
     {
         id: 4,
         title: 'Train Reservation System',
         description: 'Created an automated booking and management system for railway ticketing.',
         image: '',
-        tech: ['C', 'OOP']
+        tech: ['C', 'OOP'],
+        link: 'https://github.com/kattatrinadh/train-reservation-system'
     },
     {
         id: 5,
         title: 'Battery Management System',
         description: 'Designed a BMS emphasizing real-time monitoring and safety for EV battery packs.',
         image: '',
-        tech: ['Embedded C', 'FreeRTOS']
+        tech: ['Embedded C', 'FreeRTOS'],
+        link: 'https://github.com/kattatrinadh/battery-management-system'
     }
 ];
 
@@ -124,7 +129,7 @@ function createCarouselItem(data, index) {
             <h3 class="card-title" style="margin-top: 20px;">${data.title}</h3>
             <p class="card-description">${data.description}</p>
             <div class="card-tech">${techBadges}</div>
-            <button class="card-cta" onclick="window.open('https://github.com/Mrkatta', '_blank')">Explore</button>
+            <button class="card-cta" onclick="window.open('${data.link || 'https://github.com/kattatrinadh'}', '_blank')">Explore</button>
         </div>
     `;
 
