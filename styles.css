@@ -336,13 +336,13 @@ h6,
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 1.2rem 3.5rem;
+    padding: 1.8rem 5rem;
     font-family: var(--font-heading);
-    font-size: 1.4rem;
+    font-size: 2.2rem;
     font-weight: 900;
     color: var(--text-main);
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-decoration: none;
     background: transparent;
     border: none;
@@ -385,13 +385,26 @@ h6,
 
 .btn-neon-purple::before {
     border-color: var(--neon-purple);
-    border-width: 2px;
-    box-shadow: 0 0 20px rgba(189, 0, 255, 0.5);
+    border-width: 4px;
+    box-shadow: 0 0 35px rgba(189, 0, 255, 0.8);
+    animation: neon-pulse-purple 1.5s infinite ease-in-out;
+}
+
+@keyframes neon-pulse-purple {
+
+    0%,
+    100% {
+        box-shadow: 0 0 25px rgba(189, 0, 255, 0.6);
+    }
+
+    50% {
+        box-shadow: 0 0 60px rgba(189, 0, 255, 0.9);
+    }
 }
 
 .btn-neon-purple {
     color: var(--neon-purple);
-    text-shadow: 0 0 10px rgba(189, 0, 255, 0.5);
+    text-shadow: 0 0 15px rgba(189, 0, 255, 0.8), 0 0 30px rgba(189, 0, 255, 0.4);
 }
 
 .btn:hover {
@@ -410,13 +423,26 @@ h6,
 
 .btn-neon-gold::before {
     border-color: var(--neon-gold);
-    border-width: 2px;
-    box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+    border-width: 4px;
+    box-shadow: 0 0 35px rgba(255, 204, 0, 0.8);
+    animation: neon-pulse-gold 1.5s infinite ease-in-out;
+}
+
+@keyframes neon-pulse-gold {
+
+    0%,
+    100% {
+        box-shadow: 0 0 25px rgba(255, 204, 0, 0.6);
+    }
+
+    50% {
+        box-shadow: 0 0 60px rgba(255, 204, 0, 0.9);
+    }
 }
 
 .btn-neon-gold {
     color: var(--neon-gold);
-    text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+    text-shadow: 0 0 15px rgba(255, 204, 0, 0.8), 0 0 30px rgba(255, 204, 0, 0.4);
 }
 
 .btn-neon-gold:hover::before {
