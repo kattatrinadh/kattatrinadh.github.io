@@ -13,7 +13,7 @@ const portfolioData = [
         description: 'Implemented Advanced Encryption Standard (AES) algorithm to secure data transmission and storage.',
         image: '', // Placeholder for image
         tech: ['Python', 'Cryptography'],
-        link: 'https://github.com/kattatrinadh/aes-security-system'
+        link: 'https://github.com/kattatrinadh/aes-dpa-resistant-capstone'
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ const portfolioData = [
         description: 'Developed an intelligent lighting system controlled via MQTT for smart home integration.',
         image: '',
         tech: ['C', 'ESP32', 'MQTT'],
-        link: 'https://github.com/kattatrinadh/iot-smart-led'
+        link: 'https://github.com/kattatrinadh/Qr_code_Scanner_ESP-32'
     },
     {
         id: 3,
@@ -29,7 +29,7 @@ const portfolioData = [
         description: 'Built a real-time QR code scanning application for rapid data extraction and processing.',
         image: '',
         tech: ['Python', 'OpenCV'],
-        link: 'https://github.com/kattatrinadh/qr-code-scanner'
+        link: 'https://github.com/kattatrinadh/Qr_code_Scanner_ESP-32'
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ const portfolioData = [
         description: 'Created an automated booking and management system for railway ticketing.',
         image: '',
         tech: ['C', 'OOP'],
-        link: 'https://github.com/kattatrinadh/train-reservation-system'
+        link: 'https://github.com/kattatrinadh/Railway_Reservation_System'
     },
     {
         id: 5,
@@ -45,7 +45,7 @@ const portfolioData = [
         description: 'Designed a BMS emphasizing real-time monitoring and safety for EV battery packs.',
         image: '',
         tech: ['Embedded C', 'FreeRTOS'],
-        link: 'https://github.com/kattatrinadh/battery-management-system'
+        link: 'https://github.com/kattatrinadh/Electric-Vehicle-Charge-Prediction'
     }
 ];
 
