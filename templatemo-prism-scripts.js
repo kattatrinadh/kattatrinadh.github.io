@@ -9,22 +9,15 @@ https://templatemo.com/tm-600-prism-flux
 const portfolioData = [
     {
         id: 1,
-        title: 'AES Security System',
+        title: 'AES-DPA Capstone project',
         description: 'Implemented Advanced Encryption Standard (AES) algorithm to secure data transmission and storage.',
         image: '', // Placeholder for image
         tech: ['Python', 'Cryptography'],
         link: 'https://github.com/kattatrinadh/aes-dpa-resistant-capstone'
     },
+
     {
         id: 2,
-        title: 'IoT Smart LED',
-        description: 'Developed an intelligent lighting system controlled via MQTT for smart home integration.',
-        image: '',
-        tech: ['C', 'ESP32', 'MQTT'],
-        link: 'https://github.com/kattatrinadh/Qr_code_Scanner_ESP-32'
-    },
-    {
-        id: 3,
         title: 'QR Code Scanner',
         description: 'Built a real-time QR code scanning application for rapid data extraction and processing.',
         image: '',
@@ -32,16 +25,16 @@ const portfolioData = [
         link: 'https://github.com/kattatrinadh/Qr_code_Scanner_ESP-32'
     },
     {
-        id: 4,
-        title: 'Train Reservation System',
+        id: 3,
+        title: 'Railway Reservation System',
         description: 'Created an automated booking and management system for railway ticketing.',
         image: '',
         tech: ['C', 'OOP'],
         link: 'https://github.com/kattatrinadh/Railway_Reservation_System'
     },
     {
-        id: 5,
-        title: 'Battery Management System',
+        id: 4,
+        title: 'Electric Vehicle Charge Prediction',
         description: 'Designed a BMS emphasizing real-time monitoring and safety for EV battery packs.',
         image: '',
         tech: ['Embedded C', 'FreeRTOS'],
