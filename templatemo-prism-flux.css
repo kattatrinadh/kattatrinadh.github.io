@@ -1406,24 +1406,31 @@ a.info-item {
     }
 }
 
-/* ===== DOWNLOAD BUTTON CUSTOM STYLE ===== */
+/* ===============================
+   DOWNLOAD BUTTON FINAL OVERRIDE
+   =============================== */
 
-.download-btn {
-    font-size: 1.3rem;
-    padding: 1.4rem 3.5rem;
-    color: var(--neon-purple);
-    text-shadow: 0 0 12px rgba(189, 0, 255, 0.9);
+.btn.download-btn {
+    font-size: 1.4rem !important;
+    padding: 1.6rem 3.8rem !important;
+    color: #bd00ff !important;
+    letter-spacing: 2px !important;
 }
 
-.download-btn::before {
-    border-color: var(--neon-purple);
-    border-width: 3px;
-    box-shadow: 0 0 25px rgba(189, 0, 255, 0.7);
+.btn.download-btn .btn-content {
+    color: #bd00ff !important;
 }
 
-.download-btn:hover::before {
-    background: rgba(189, 0, 255, 0.15);
+.btn.download-btn::before {
+    background: rgba(13, 17, 35, 0.9) !important;
+    border: 3px solid #bd00ff !important;
+    box-shadow: 0 0 25px rgba(189, 0, 255, 0.8) !important;
+    border-radius: 6px !important;
+}
+
+.btn.download-btn:hover::before {
+    background: rgba(189, 0, 255, 0.2) !important;
     box-shadow:
-        inset 0 0 20px rgba(189, 0, 255, 0.5),
-        0 0 40px rgba(189, 0, 255, 0.6);
+        inset 0 0 25px rgba(189, 0, 255, 0.6),
+        0 0 45px rgba(189, 0, 255, 0.9) !important;
 }
