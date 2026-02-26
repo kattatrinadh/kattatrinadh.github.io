@@ -92,7 +92,7 @@ const animateNumbers = () => {
    ========================================================================= */
 
 const revealElements = document.querySelectorAll(".reveal");
-const metricsSectionElement = document.querySelector('.metrics');
+const metricsSectionElement = document.querySelector('.stats-section');
 
 const observerOptions = {
     threshold: 0.15,
@@ -106,8 +106,8 @@ const scrollObserver = new IntersectionObserver(function (entries, scrollObserve
         } else {
             entry.target.classList.add("active");
 
-            // Check if it's the metrics section to start counter
-            if (entry.target.classList.contains('metrics') && !hasCounted) {
+            // Check if it's the stats section to start counter
+            if (entry.target.classList.contains('stats-section') && !hasCounted) {
                 animateNumbers();
                 hasCounted = true;
             }

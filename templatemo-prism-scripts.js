@@ -11,8 +11,8 @@ const portfolioData = [
         id: 1,
         title: 'AES-DPA Resistant Capstone Project',
         description: 'Developed a secure implementation of the Advanced Encryption Standard (AES) in Python and simulated Differential Power Analysis (DPA) attacks using synthetic power traces. Implemented masking and randomization countermeasures to reduce side-channel leakage and validated security improvements through statistical trace analysis for embedded and IoT applications.',
-        image: 'images/aes-dpa-project.png', 
-        tech: ['Python', 'Cryptography', 'Differential Power Analysis',  'Security Research'],
+        image: 'images/aes-dpa-project.png',
+        tech: ['Python', 'Cryptography', 'Differential Power Analysis', 'Security Research'],
         link: 'https://github.com/kattatrinadh/aes-dpa-resistant-capstone'
 
     },
@@ -407,7 +407,7 @@ function animateCounter(element) {
 
 // Intersection Observer for stats animation
 const observerOptions = {
-    threshold: 0.5,
+    threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
 };
 
@@ -626,3 +626,32 @@ document.addEventListener('DOMContentLoaded', () => {
     initHeroParticles();
     animateHeroParticles();
 });
+
+// ===============================
+// MODAL LOGIC
+// ===============================
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden'; // Prevent page scrolling behind modal
+    }
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.remove('show');
+        document.body.style.overflow = 'auto'; // Restore page scrolling
+    }
+}
+
+// Close modals when clicking outside of the content box
+window.onclick = function (event) {
+    if (event.target.classList.contains('media-modal')) {
+        event.target.classList.remove('show');
+        document.body.style.overflow = 'auto';
+    }
+}
+
+
