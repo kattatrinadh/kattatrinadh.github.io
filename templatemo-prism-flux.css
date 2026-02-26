@@ -460,6 +460,7 @@ body::after {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     z-index: 1;
+    flex-shrink: 0;
 }
 
 .card-description {
@@ -468,6 +469,7 @@ body::after {
     margin-bottom: 20px;
     font-size: 14px;
     flex-grow: 1;
+    overflow-y: auto;
 }
 
 .card-tech {
@@ -475,6 +477,7 @@ body::after {
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 20px;
+    flex-shrink: 0;
 }
 
 .tech-badge {
@@ -500,6 +503,7 @@ body::after {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
+    flex-shrink: 0;
 }
 
 .card-cta:hover {
