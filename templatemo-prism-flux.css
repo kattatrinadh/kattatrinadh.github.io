@@ -1438,3 +1438,102 @@ a.info-item {
         inset 0 0 25px rgba(189, 0, 255, 0.6),
         0 0 45px rgba(189, 0, 255, 0.9) !important;
 }
+
+/* ===============================
+   CERTIFICATIONS & MEDIA SECTION
+   =============================== */
+.media-links-section {
+    position: relative;
+    z-index: 10;
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.media-card {
+    background: rgba(10, 15, 30, 0.7);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.media-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.1), transparent);
+    transition: all 0.6s ease;
+}
+
+.media-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 255, 255, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.15);
+}
+
+.media-card:hover::before {
+    left: 100%;
+}
+
+.media-icon {
+    font-size: 32px;
+    background: rgba(0, 255, 255, 0.1);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: var(--accent-cyan);
+    flex-shrink: 0;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.media-card:hover .media-icon {
+    transform: scale(1.1);
+    background: rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.media-content {
+    text-align: left;
+}
+
+.media-content h4 {
+    color: var(--text-primary);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    margin: 0 0 5px 0;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.media-card:hover .media-content h4 {
+    color: var(--accent-cyan);
+}
+
+.media-content p {
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
